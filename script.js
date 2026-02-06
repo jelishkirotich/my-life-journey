@@ -202,3 +202,10 @@ navLinks.forEach(link => {
         link.classList.add('active');
     }
 });
+// Welcome Alert (only on homepage)
+document.addEventListener("DOMContentLoaded", () => {
+    // Check if we are on homepage
+    if (document.body.classList.contains("home-page")) {
+        alert("Welcome to my personal journey website!");
+    }
+});
